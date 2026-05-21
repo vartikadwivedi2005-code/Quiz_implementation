@@ -60,5 +60,6 @@ Here are some features planned for future iterations of this application:
 
 ```html
 <p align="center">
-  <img src="your-screenshot-path-here.png" alt="Quiz App Screen Preview" width="500">
+  <img src="<img width="960" height="504" alt="image" src="https://github.com/user-attachments/assets/298106b0-b8e9-4eb3-a758-540fef6cadf4" />
+" alt="Quiz App Screen Preview" width="500">
 </p>
