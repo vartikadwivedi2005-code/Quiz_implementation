@@ -58,6 +58,6 @@ Here are some features planned for future iterations of this application:
 
 ```html
 <p align="center">
-  <img src="your-screenshot-path-here.png" alt="Quiz App Screen Preview" width="500">
+  <img src="C:\Users\Acer\OneDrive\Pictures\Screenshots\Screenshot 2026-05-21 134151.png" alt="Quiz App Screen Preview" width="500">
 </p>" alt="Quiz App Screen Preview" width="500">
 
