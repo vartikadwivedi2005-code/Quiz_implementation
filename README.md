@@ -24,3 +24,41 @@ The codebase contains a clean separation of concerns spread across 3 primary wor
 ├── index.html       # Structural layout, UI views, and DOM container elements
 ├── styles.css       # Layout styles, absolute center positioning, feedback animations (embedded)
 └── quiz.js          # Main engine handling application state, timer intervals, and quiz data arrays
+
+---
+
+## 🎨 UI/UX Design & Theme
+
+The interface is crafted with a high emphasis on a clean, modern, and modern digital aesthetic:
+* **Color Palette:** Features an angled vibrant backdrop (`linear-gradient(135deg, #f1c4ef 0%, #2a5298 100%)`) paired with a crisp, floating white container to prioritize readability and user focus.
+* **Micro-interactions:** Interactive elements utilize fluid properties (`transition: all 0.3s; transform: translateX(5px);`) to shift subtly on hover, providing instant tactile feedback to user movements.
+* **State-Driven Styling:** The UI dynamically injects contextual utility classes (`.correct`, `.wrong`, `.hide`) via JavaScript to transition states smoothly without requiring a single page reload.
+
+---
+
+## 📈 Key Technical Implementation Details
+
+* **Anti-Cheat State Guardrail:** The application implements an `answered` boolean flag. Once an option is clicked, this flag instantly flips to `true` and disables all option buttons, preventing a user from multi-clicking or changing their answer after seeing the result.
+* **Memory Leak Prevention:** To prevent intervals from stacking up in the browser's background when a user clicks through questions rapidly, the countdown logic ensures that `clearInterval(timerInterval)` is strictly invoked before a new timer instance spin up or when an option is selected.
+* **Dynamic DOM Reconstruction:** Instead of hardcoding HTML containers for every possible option, the application leverages native `document.createElement('button')` inside a `forEach` loop. This keeps the initial index file lightweight and allows the application to seamlessly scale to questions with any number of multiple-choice variants.
+
+---
+
+## 🗺️ Roadmap & Future Enhancements
+
+Here are some features planned for future iterations of this application:
+- [ ] **Category Selection:** Allow users to choose quiz topics (e.g., HTML, CSS, JavaScript, or General Knowledge) before starting.
+- [ ] **Persistent High Scores:** Integrate HTML5 `localStorage` to keep track of a user's personal best scores across sessions.
+- [ ] **Dark Mode Toggle:** Implement a CSS variable-driven dark theme switcher for comfortable night-time playing.
+- [ ] **Progress Bar:** Replace the text-based question counter with a smooth, animated visual progress bar.
+
+---
+
+## 📸 Screenshots / Preview
+
+*(Pro-Tip: Take a screenshot of your beautiful quiz interface, upload it to your repository, and link it here so people can see how amazing it looks right from the repository homepage!)*
+
+```html
+<p align="center">
+  <img src="your-screenshot-path-here.png" alt="Quiz App Screen Preview" width="500">
+</p>
