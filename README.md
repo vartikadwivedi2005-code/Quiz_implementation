@@ -56,10 +56,8 @@ Here are some features planned for future iterations of this application:
 
 ## 📸 Screenshots / Preview
 
-*(Pro-Tip: Take a screenshot of your beautiful quiz interface, upload it to your repository, and link it here so people can see how amazing it looks right from the repository homepage!)*
-
 ```html
 <p align="center">
-  <img src="<img width="960" height="504" alt="image" src="https://github.com/user-attachments/assets/298106b0-b8e9-4eb3-a758-540fef6cadf4" />
-" alt="Quiz App Screen Preview" width="500">
-</p>
+  <img src="your-screenshot-path-here.png" alt="Quiz App Screen Preview" width="500">
+</p>" alt="Quiz App Screen Preview" width="500">
+
